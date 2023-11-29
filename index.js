@@ -60,4 +60,4 @@ switch (task) {
     globalThis.Player = task7.Player;
     const player7 = new Player("Grog", 4);
     console.log(player7);
-}
+};
