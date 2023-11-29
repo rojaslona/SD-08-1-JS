@@ -22,7 +22,6 @@ if (process.argv[2]) {
   task = parseInt(prompt("Run task [1-7]: "));
 };
 
-
 switch (task) {
   case 1:
     globalThis.Player = task1.Player;
