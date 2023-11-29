@@ -3,8 +3,8 @@
 // Your 7 tasks are located in separate files.
 // Open task1.js to begin.
 
-import pkg from "prompt-sync";
-const prompt = pkg();
+import promptSync from "prompt-sync";
+const prompt = promptSync();
 
 import * as task1 from "./task1.js";
 import * as task2 from "./task2.js";
@@ -14,7 +14,7 @@ import * as task5 from "./task5.js";
 import * as task6 from "./task6.js";
 import * as task7 from "./task7.js";
 
-let test = parseInt(prompt("Run test [1-7]"));
+let test = parseInt(prompt("Run test [1-7]: "));
 
 switch (test) {
   case 1:
