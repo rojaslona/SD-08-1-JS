@@ -4,7 +4,6 @@
 // Open task1.js to begin.
 
 import promptSync from "prompt-sync";
-const prompt = promptSync();
 
 import * as task1 from "./task1.js";
 import * as task2 from "./task2.js";
@@ -14,9 +13,17 @@ import * as task5 from "./task5.js";
 import * as task6 from "./task6.js";
 import * as task7 from "./task7.js";
 
-let test = parseInt(prompt("Run test [1-7]: "));
+let task;
 
-switch (test) {
+if (process.argv[2]) {
+  task = parseInt(process.argv[2]);
+} else {
+  const prompt = promptSync();
+  task = parseInt(prompt("Run task [1-7]: "));
+};
+
+
+switch (task) {
   case 1:
     globalThis.Player = task1.Player;
     const player1 = new Player("Grog", 4);
